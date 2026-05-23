@@ -6,6 +6,7 @@
 
 #include "common.h"
 
+char buf[256];
 
 // ============================================================================
 //
@@ -53,8 +54,8 @@ inline int GetGameHeight(LPRH rhPtr)
 
 void ScaleRect(RECT *ret, float scale, LPRH rhPtr)
 {
-  int xmiddle = GetScreenWidth(rhPtr)/2;
-  int ymiddle = GetScreenHeight(rhPtr)/2;
+  int xmiddle = GetScreenWidth(rhPtr) / 2;
+  int ymiddle = GetScreenHeight(rhPtr) / 2;
 
   ret->left   -= xmiddle; 
   ret->right  -= xmiddle;
@@ -495,12 +496,16 @@ ACTION
 	/* Params */		(1, PARAM_NUMBER, "Game scale (1.0=default)")
 )
 {
-  long tmpf = Param(TYPE_FLOAT);
-  float param = *(float*)&tmpf;
+  //long tmpf = Param(TYPE_FLOAT);
+  //float param = *(float*)&tmpf;
+
+  float param = (float)Param(TYPE_FLOAT); // Bugfix for b4 -RH
 
   //guard against multiple event triggers
-  if(GlobalData.gamescale == param)
-    return;
+  if (GlobalData.gamescale == param)
+  {
+      return;
+  }
 
   GlobalData.gamescale = param;
 

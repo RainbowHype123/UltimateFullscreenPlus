@@ -4,14 +4,15 @@
 
 #ifdef CONDITION_MENU
 
-	ITEM(0, "Is fullscreen")
-	ITEM(1, "Is windowed")
+  ITEM(0, "Is fullscreen")
+  ITEM(1, "Is windowed")
   SEPARATOR
   ITEM(2, "On fullscreen")
-	ITEM(3, "On windowed")
+  ITEM(3, "On windowed")
   ITEM(4, "On change window mode")
-	SEPARATOR
-	ITEM(5, "On monitor switch")
+  SEPARATOR
+  ITEM(5, "On monitor switch")
+  SEPARATOR
 
 #endif
 
@@ -96,10 +97,12 @@
     ITEM(6,"Manual Game rectangle width ")
     ITEM(7,"Manual Game rectangle height")
   SUB_END
+  SEPARATOR
   SUB_START("Cropping")
 	  ITEM(8,"Cropped game width  (before scaling)")
 	  ITEM(9,"Cropped game height (before scaling)")
   SUB_END
+  SEPARATOR
   SUB_START("Visible Screen Edges")
 		ITEM(12, "Get Left Edge")
 		ITEM(13, "Get Right Edge")
@@ -112,7 +115,9 @@
 	  ITEM(18, "Get Top Edge")
 	  ITEM(19, "Get Bottom Edge")
 	  SUB_END
+  SEPARATOR
   ITEM(10,"Fullscreen type")
   ITEM(11,"Game scale")
+  SEPARATOR
 
 #endif

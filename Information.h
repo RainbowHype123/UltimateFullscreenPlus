@@ -6,7 +6,7 @@
 #define	ObjectName			"Ultimate Fullscreen PLUS"
 #define	ObjectAuthor		"Unofficial update by NaitorStudios"
 #define	ObjectCopyright		"Originally made by Sebastian Janisz"
-#define	ObjectComment		"Version 1.2.  A better fullscreen solution that preserves aspect ratio and allows for widescreen configurations such as \"vert-\" and \"hor+\"."
+#define	ObjectComment		"A better fullscreen solution that preserves aspect ratio and allows for widescreen configurations such as \"vert-\" and \"hor+\". Version 1.2 (b4)"
 #define	ObjectURL			"http://www.ultimatewalrus.com"
 #define	ObjectHelp			""
 

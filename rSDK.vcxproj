@@ -34,42 +34,44 @@
     <SccProjectName />
     <SccLocalPath />
     <ProjectGuid>{C696E22E-42E0-B46E-1C71-C09AEF2CCBA5}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>UltimateFullscreenPlus</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Run_Only_Small|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Vitalize_Small|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Vitalize|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Run_Only|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Small|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -147,7 +149,7 @@
       <Optimization>MaxSpeed</Optimization>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <WarningLevel>Level3</WarningLevel>
-      <AdditionalIncludeDirectories>..\..\Inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>NDEBUG;COMPILE_SMALL;WIN32;_WINDOWS;STRICT;COXSDK;IN_EXT_VERSION2;RSDK;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AssemblerListingLocation>.\Release_Small\</AssemblerListingLocation>
       <BrowseInformation>true</BrowseInformation>
@@ -175,9 +177,9 @@
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <LinkDLL>true</LinkDLL>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
-      <OutputFile>c:\tools\game\multimedia fusion 2\extensions\ultimatefullscreen.mfx</OutputFile>
+      <OutputFile>$(ProjectDir)_MFX\Extensions\UltimateFullscreenPlus.mfx</OutputFile>
       <ImportLibrary>.\Release_Small\rsdk.lib</ImportLibrary>
-      <AdditionalLibraryDirectories>..\..\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>odbc32.lib;odbccp32.lib;mmfs2.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Windows</SubSystem>
       <ModuleDefinitionFile>.\Ext.def</ModuleDefinitionFile>
@@ -192,7 +194,7 @@
       <Optimization>MaxSpeed</Optimization>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <WarningLevel>Level3</WarningLevel>
-      <AdditionalIncludeDirectories>..\..\Inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>NDEBUG;RUN_ONLY;WIN32;_WINDOWS;STRICT;COXSDK;IN_EXT_VERSION2;RSDK;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AssemblerListingLocation>.\Run_Only\</AssemblerListingLocation>
       <PrecompiledHeaderOutputFile>.\Run_Only\rSDK.pch</PrecompiledHeaderOutputFile>
@@ -218,9 +220,9 @@
     <Link>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <LinkDLL>true</LinkDLL>
-      <OutputFile>C:\Program Files (x86)\Steam\steamapps\common\Clickteam Fusion 2.5\data\runtime\UltimateFullscreenPlus.mfx</OutputFile>
+      <OutputFile>$(ProjectDir)_MFX\Data\Runtime\UltimateFullscreenPlus.mfx</OutputFile>
       <ImportLibrary>.\Run_Only\Template.lib</ImportLibrary>
-      <AdditionalLibraryDirectories>..\..\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>odbc32.lib;odbccp32.lib;mmfs2.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Windows</SubSystem>
       <ModuleDefinitionFile>.\Ext.def</ModuleDefinitionFile>
@@ -234,8 +236,8 @@
       <Optimization>Disabled</Optimization>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <WarningLevel>Level3</WarningLevel>
-      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
-      <AdditionalIncludeDirectories>..\..\Inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>..\Inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_DEBUG;WIN32;_WINDOWS;STRICT;COXSDK;IN_EXT_VERSION2;RSDK;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
       <BrowseInformation>true</BrowseInformation>
@@ -264,9 +266,9 @@
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <LinkDLL>true</LinkDLL>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <OutputFile>c:\tools\game\multimedia fusion 2\extensions\ultimatefullscreen.mfx</OutputFile>
+      <OutputFile>$(ProjectDir)_MFX\_DEBUG\UltimateFullscreenPlusDEBUG.mfx</OutputFile>
       <ImportLibrary>.\Debug\rsdk.lib</ImportLibrary>
-      <AdditionalLibraryDirectories>..\..\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>odbc32.lib;odbccp32.lib;mmfs2.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Windows</SubSystem>
       <ModuleDefinitionFile>.\Ext.def</ModuleDefinitionFile>
@@ -281,7 +283,7 @@
       <Optimization>MaxSpeed</Optimization>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <WarningLevel>Level3</WarningLevel>
-      <AdditionalIncludeDirectories>..\..\Inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>NDEBUG;WIN32;_WINDOWS;STRICT;COXSDK;IN_EXT_VERSION2;RSDK;%(PreprocessorDefinitions);</PreprocessorDefinitions>
       <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
       <BrowseInformation>true</BrowseInformation>
@@ -308,9 +310,9 @@
     <Link>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <LinkDLL>true</LinkDLL>
-      <OutputFile>C:\Program Files (x86)\Steam\steamapps\common\Clickteam Fusion 2.5\Extensions\UltimateFullscreenPlus.mfx</OutputFile>
+      <OutputFile>$(ProjectDir)_MFX\Extensions\UltimateFullscreenPlus.mfx</OutputFile>
       <ImportLibrary>.\Release\rsdk.lib</ImportLibrary>
-      <AdditionalLibraryDirectories>..\..\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>odbc32.lib;odbccp32.lib;mmfs2.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Windows</SubSystem>
       <ModuleDefinitionFile>.\Ext.def</ModuleDefinitionFile>
@@ -325,7 +327,7 @@
       <Optimization>MaxSpeed</Optimization>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <WarningLevel>Level3</WarningLevel>
-      <AdditionalIncludeDirectories>..\..\Inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>NDEBUG;RUN_ONLY;VITALIZE;WIN32;_WINDOWS;STRICT;COXSDK;IN_EXT_VERSION2;RSDK;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AssemblerListingLocation>.\Vitalize\</AssemblerListingLocation>
       <PrecompiledHeaderOutputFile>.\Vitalize\rSDK.pch</PrecompiledHeaderOutputFile>
@@ -351,9 +353,9 @@
     <Link>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <LinkDLL>true</LinkDLL>
-      <OutputFile>.\Vitalize\Template.mox</OutputFile>
+      <OutputFile>$(ProjectDir)_VITALIZE\UltimateFullscreenPlus.mox</OutputFile>
       <ImportLibrary>.\Vitalize\Template.lib</ImportLibrary>
-      <AdditionalLibraryDirectories>..\..\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>odbc32.lib;odbccp32.lib;mmfs2.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Windows</SubSystem>
       <ModuleDefinitionFile>.\Ext.def</ModuleDefinitionFile>
@@ -368,7 +370,7 @@
       <Optimization>MaxSpeed</Optimization>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <WarningLevel>Level3</WarningLevel>
-      <AdditionalIncludeDirectories>..\..\Inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>NDEBUG;RUN_ONLY;COMPILE_SMALL;VITALIZE;WIN32;_WINDOWS;STRICT;COXSDK;IN_EXT_VERSION2;RSDK;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AssemblerListingLocation>.\Vitalize_Small\</AssemblerListingLocation>
       <PrecompiledHeaderOutputFile>.\Vitalize_Small\rSDK.pch</PrecompiledHeaderOutputFile>
@@ -395,9 +397,9 @@
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <LinkDLL>true</LinkDLL>
       <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
-      <OutputFile>.\Vitalize_Small\Template.mox</OutputFile>
+      <OutputFile>$(ProjectDir)_VITALIZE\UltimateFullscreenPlus.mox</OutputFile>
       <ImportLibrary>.\Vitalize_Small\Template.lib</ImportLibrary>
-      <AdditionalLibraryDirectories>..\..\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>msvcrt.lib;odbc32.lib;odbccp32.lib;mmfs2.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Windows</SubSystem>
       <ModuleDefinitionFile>.\Ext.def</ModuleDefinitionFile>
@@ -412,7 +414,7 @@
       <Optimization>MaxSpeed</Optimization>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <WarningLevel>Level3</WarningLevel>
-      <AdditionalIncludeDirectories>..\..\Inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>NDEBUG;RUN_ONLY;COMPILE_SMALL;WIN32;_WINDOWS;STRICT;COXSDK;IN_EXT_VERSION2;RSDK;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AssemblerListingLocation>.\Run_Only_Small\</AssemblerListingLocation>
       <BrowseInformation>true</BrowseInformation>
@@ -440,9 +442,9 @@
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <LinkDLL>true</LinkDLL>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
-      <OutputFile>.\Run_Only_Small\Template.mfx</OutputFile>
+      <OutputFile>$(ProjectDir)_MFX\Data\Runtime\UltimateFullscreenPlus.mfx</OutputFile>
       <ImportLibrary>.\Run_Only_Small\Template.lib</ImportLibrary>
-      <AdditionalLibraryDirectories>..\..\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>odbc32.lib;odbccp32.lib;mmfs2.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Windows</SubSystem>
       <ModuleDefinitionFile>.\Ext.def</ModuleDefinitionFile>
