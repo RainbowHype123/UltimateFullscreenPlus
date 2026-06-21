@@ -289,8 +289,7 @@ cSurface* WINAPI DLLExport GetRunObjectCollisionMask(LPRDATA rdPtr, LPARAM lPara
 // 
 short WINAPI DLLExport PauseRunObject(LPRDATA rdPtr)
 {
-	// Ok
-	return 0;
+	return 0; // Ok
 }
 
 
@@ -301,8 +300,7 @@ short WINAPI DLLExport PauseRunObject(LPRDATA rdPtr)
 //
 short WINAPI DLLExport ContinueRunObject(LPRDATA rdPtr)
 {
-	// Ok
-	return 0;
+	return 0; // Ok
 }
 
 
@@ -356,7 +354,6 @@ void WINAPI DLLExport EndApp(mv _far *mV, CRunApp* pApp)
 // 
 void WINAPI DLLExport StartFrame(mv _far *mV, DWORD dwReserved, int nFrameIndex)
 {
-
 }
 
 // -------------------
@@ -366,7 +363,6 @@ void WINAPI DLLExport StartFrame(mv _far *mV, DWORD dwReserved, int nFrameIndex)
 // 
 void WINAPI DLLExport EndFrame(mv _far *mV, DWORD dwReserved, int nFrameIndex)
 {
-
 }
 
 // ============================================================================
@@ -464,7 +460,7 @@ LPWORD WINAPI DLLExport GetDebugTree(LPRDATA rdPtr)
 // -----------------
 // This routine returns the text of a given item.
 //
-void WINAPI DLLExport GetDebugItem(LPSTR pBuffer, LPRDATA rdPtr, int id)
+void WINAPI DLLExport GetDebugItem(LPTSTR pBuffer, LPRDATA rdPtr, int id)
 {
 #if !defined(RUN_ONLY)
 

@@ -6,11 +6,12 @@
 
 #include "common.h"
 
-char buf[256];
+//char buf[256];
+TCHAR buf[256];
 
 // ============================================================================
 //
-//Functions
+// Functions
 //
 // ============================================================================
 
@@ -632,7 +633,7 @@ ACTION
     /* ID */			  12,
     /* Name */			"Listen for monitor switches = %0",
     /* Flags */			0,
-    /* Params */		(1, PARAM_NUMBER, "Listen for monitor switches (0 = false, 1 = true)")
+    /* Params */		(1, PARAM_NUMBER, _T("Listen for monitor switches (0 = false, 1 = true)"))
 )
 {
     int myparam1 = Param(TYPE_INT);
@@ -648,7 +649,7 @@ ACTION
     /* ID */			  13,
     /* Name */			"Set Play Area ( %0x%1 )",
     /* Flags */			0,
-    /* Params */		(2, PARAM_NUMBER, "Play Area width", PARAM_NUMBER, "Play Area height")
+    /* Params */		(2, PARAM_NUMBER, _T("Play Area width"), PARAM_NUMBER, _T("Play Area height"))
 )
 {
     int myparam1 = Param(TYPE_INT);

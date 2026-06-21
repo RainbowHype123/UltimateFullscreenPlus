@@ -3,12 +3,12 @@
 // --------------------
 
 // Basic object details
-#define	ObjectName			"Ultimate Fullscreen PLUS"
-#define	ObjectAuthor		"Unofficial update by NaitorStudios"
-#define	ObjectCopyright		"Originally made by Sebastian Janisz"
-#define	ObjectComment		"A better fullscreen solution that preserves aspect ratio and allows for widescreen configurations such as \"vert-\" and \"hor+\". Version 1.2 (b4)"
-#define	ObjectURL			"http://www.ultimatewalrus.com"
-#define	ObjectHelp			""
+#define	ObjectName			_T("Ultimate Fullscreen PLUS")
+#define	ObjectAuthor		_T("Unofficial update by NaitorStudios")
+#define	ObjectCopyright		_T("Originally made by Sebastian Janisz")
+#define	ObjectComment		_T("A better fullscreen solution that preserves aspect ratio and allows for widescreen configurations such as \"vert-\" and \"hor+\". Version 1.2 (b4)")
+#define	ObjectURL			_T("http://www.ultimatewalrus.com")
+#define	ObjectHelp			_T("")
 
 // If you register your object with Clickteam, change this to the ID you were given
 #define ObjectRegID			REGID_PRIVATE

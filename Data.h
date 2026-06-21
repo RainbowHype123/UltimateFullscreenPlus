@@ -1,13 +1,18 @@
 #ifndef DATA_H
 #define DATA_H
 
+#ifdef _UNICODE
+  #define EDITDATA	EDITDATAW
+  #define LPEDATA		LPEDATAW
+#else
+  #define EDITDATA	EDITDATAA
+  #define LPEDATA		LPEDATAA
+#endif
+
 class rRundata;
 typedef rRundata * LPRRDATA;
 
 enum FULLSCREENTYPE{BESTFIT=0, BESTPIXELPERFECTFIT=1, ONETOONE=2, MATCHWIDTH=3, MATCHHEIGHT=4, MANUAL=5, RESIZEWITHBORDER=6};
-
-
-
 
 
 // --------------------------------
@@ -102,13 +107,6 @@ typedef struct _GLOBALDATA
   float gamescale;        //1.0 by default, this is multiplied to the size obtained from the fstype calculation
 } GLOBALDATA;
 
-
-
 extern GLOBALDATA GlobalData;
-
-
-
-
-
 
 #endif
